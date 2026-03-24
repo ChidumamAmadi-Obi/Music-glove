@@ -44,6 +44,8 @@ int volumeChangePercentage=5;
 typedef enum{
   BUTTON_ONE_ON, // 1
   BUTTON_TWO_ON, // 2
+  BUTTON_THREE_ON, // 3
+  BUTTON_FOUR_ON, // 4
   VOLUME_ENCODING=5 // 5
 }InputCodes;
 

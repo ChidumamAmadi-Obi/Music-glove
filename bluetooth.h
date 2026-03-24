@@ -16,6 +16,17 @@ void sendDataToApp(MPUSensorValues mpuSensorValues, MusicParameters musicParamet
       delay(10); 
       }
 
+    if (button.three) { 
+      SerialBT.println(BUTTON_THREE_ON);
+      Serial.println("BUTTON THREE IS ON");
+      delay(10); 
+      }
+    if (button.four) { 
+      SerialBT.println(BUTTON_FOUR_ON); 
+      Serial.println("BUTTON FOUR IS ON");
+      delay(10); 
+      }
+
   // the volume plus 5 is sent over bluetooth
   // this prevents the esp32 from sending the same thing at the ssame time if the volume is equal to the code for a button 
   // eg volume=0 and button one is on (which will also send a 0)
